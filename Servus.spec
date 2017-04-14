@@ -4,12 +4,12 @@
 
 Summary:	C++ network utility library that provides a zeroconf API, URI parsing and UUIDs.
 Name:		Servus
-Version:	1.3.0
+Version:	1.5.0
 Release:	1
 License:	LGPL v3
 Group:		Libraries
 Source0:	https://github.com/HBPVIS/Servus/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	948efe958d3c9586a06d0c1e10d1d74e
+# Source0-md5:	9cd17be0b45ca30471f515d6a7a77c6e
 URL:		https://github.com/HBPVIS/Servus
 BuildRequires:	Eyescale-CMake >= 2016.04
 BuildRequires:	Qt5Core-devel
@@ -82,9 +82,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS.txt LICENSE.txt README.md doc/Changelog.md
 %attr(755,root,root) %{_bindir}/servusBrowser
 %attr(755,root,root) %{_libdir}/libServus.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libServus.so.3
+%attr(755,root,root) %ghost %{_libdir}/libServus.so.5
 %attr(755,root,root) %{_libdir}/libServusQt.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libServusQt.so.3
+%attr(755,root,root) %ghost %{_libdir}/libServusQt.so.5
 
 %files devel
 %defattr(644,root,root,755)
