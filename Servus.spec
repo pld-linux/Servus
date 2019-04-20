@@ -5,7 +5,7 @@
 Summary:	C++ network utility library that provides a zeroconf API, URI parsing and UUIDs.
 Name:		Servus
 Version:	1.5.0
-Release:	1
+Release:	2
 License:	LGPL v3
 Group:		Libraries
 Source0:	https://github.com/HBPVIS/Servus/archive/%{version}/%{name}-%{version}.tar.gz
@@ -58,7 +58,8 @@ ln -s %{_datadir}/Eyescale-CMake CMake/common
 install -d build
 cd build
 %cmake .. \
-	-DBUILDYARD_DISABLED=ON
+	-DBUILDYARD_DISABLED=ON \
+	-DCOMMON_DISABLE_WERROR:BOOL=ON
 %{__make}
 
 %if %{with apidocs}
