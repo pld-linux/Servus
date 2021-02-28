@@ -76,9 +76,7 @@ Pliki nagłówkowe biblioteki Servus Qt.
 Summary:	Servus API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki Servus
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for Servus library.
