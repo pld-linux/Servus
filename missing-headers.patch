@@ -1,0 +1,21 @@
+From d3ac67e53ab82f9a5e701566cd622d9e0bde92b3 Mon Sep 17 00:00:00 2001
+From: Alan Mok <34705943+mokpi@users.noreply.github.com>
+Date: Mon, 15 Feb 2021 02:26:55 +0900
+Subject: [PATCH] Add ` #include <stdexcept>`.
+
+---
+ servus/serializable.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/servus/serializable.h b/servus/serializable.h
+index 0ee07dc..651b4ae 100644
+--- a/servus/serializable.h
++++ b/servus/serializable.h
+@@ -23,6 +23,7 @@
+ #include <servus/api.h>
+ #include <servus/types.h>
+ 
++#include <stdexcept>  // runtime_error
+ #include <functional> // function
+ #include <memory>     // shared_ptr
+ 

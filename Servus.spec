@@ -6,12 +6,13 @@ Summary:	C++ network utility library that provides a zeroconf API, URI parsing a
 Summary(pl.UTF-8):	Biblioteka narzędzi sieciowych udostępniająca API zeroconf, analizy URI i UUID
 Name:		Servus
 Version:	1.5.2
-Release:	2
+Release:	3
 License:	LGPL v3
 Group:		Libraries
 #Source0Download: https://github.com/HBPVIS/Servus/releases
 Source0:	https://github.com/HBPVIS/Servus/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	bc6fb62a002fd288fc2c1f12878a533c
+Patch0:		missing-headers.patch
 URL:		https://github.com/HBPVIS/Servus
 BuildRequires:	Eyescale-CMake >= 2016.04
 BuildRequires:	Qt5Core-devel >= 5
@@ -101,6 +102,7 @@ Graficzny interfejs servusBrowser.
 
 %prep
 %setup -q
+%patch0 -p1
 
 rmdir CMake/common
 ln -s %{_datadir}/Eyescale-CMake CMake/common
