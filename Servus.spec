@@ -23,6 +23,7 @@ BuildRequires:	cmake >= 3.1
 %{?with_apidocs:BuildRequires:	doxygen}
 BuildRequires:	libstdc++-devel >= 6:4.7
 BuildRequires:	pkgconfig
+BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.605
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
