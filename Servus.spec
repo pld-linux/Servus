@@ -6,7 +6,7 @@ Summary:	C++ network utility library that provides a zeroconf API, URI parsing a
 Summary(pl.UTF-8):	Biblioteka narzędzi sieciowych udostępniająca API zeroconf, analizy URI i UUID
 Name:		Servus
 Version:	1.5.2
-Release:	1
+Release:	2
 License:	LGPL v3
 Group:		Libraries
 #Source0Download: https://github.com/HBPVIS/Servus/releases
@@ -38,6 +38,7 @@ Summary:	Header files for Servus library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki Servus
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	Qt5Core-devel >= 5
 Requires:	libstdc++-devel >= 6:4.7
 
 %description devel
